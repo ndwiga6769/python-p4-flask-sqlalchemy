@@ -14,5 +14,9 @@ migrate = Migrate(app, db)
 
 db.init_app(app)
 
+@app.route('/')
+def index():
+    return 'Hello World'
+
 if __name__ == '__main__':
-    app.run(port=5563)
+    app.run(port=5555)
